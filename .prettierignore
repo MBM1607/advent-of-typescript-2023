@@ -1,7 +1,7 @@
+# Ignore artifacts:
 build
 coverage
-.vscode
-.husky
 node_modules
-Readme.md
+dist
+build
 pnpm-lock.yaml

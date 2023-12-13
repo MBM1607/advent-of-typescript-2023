@@ -2,12 +2,32 @@
 	"name": "advent-of-typescript-2023",
 	"version": "1.0.0",
 	"license": "MIT",
+	"type": "module",
+	"author": {
+		"name": "Muhammad Khan",
+		"email": "me@muhammadkhan.dev",
+		"url": "https://muhammadkhan.dev"
+	},
 	"scripts": {
-		"lint": "eslint --fix && prettier -w --plugin-search-dir=. .",
-		"test": "jest --runInBand",
-		"prepare": "husky install"
+		"lint": "eslint . --fix --report-unused-disable-directives && pnpm format && pnpm spellcheck",
+		"format": "prettier --write --log-level silent .",
+		"tsc": "tsc",
+		"spellcheck": "cspell . --quiet",
+		"diag": "tsc --extendedDiagnostics",
+		"trace": "tsc --generateTrace ./trace && npx @typescript/analyze-trace trace"
 	},
 	"devDependencies": {
+		"@types/eslint": "^8.44.9",
+		"@types/node": "^20.10.4",
+		"@types/prettier": "^3.0.0",
+		"cspell": "^8.1.3",
+		"eslint": "^8.55.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.0",
+		"eslint-plugin-n": "^16.4.0",
+		"eslint-plugin-unused-imports": "^3.0.0",
+		"prettier": "^3.1.1",
 		"type-testing": "^0.2.0",
 		"typescript": "^5.3.3"
 	}

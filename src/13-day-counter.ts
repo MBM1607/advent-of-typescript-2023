@@ -1,4 +1,4 @@
-import { Equal, Expect } from "type-testing";
+import type { Equal, Expect } from "type-testing";
 
 type ArrayOfLength<Length extends number, T extends unknown[] = []> = T["length"] extends Length
 	? T
