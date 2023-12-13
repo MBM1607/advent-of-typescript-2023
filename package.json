@@ -1,0 +1,13 @@
+{
+	"name": "advent-of-typescript-2023",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"lint": "eslint --fix && prettier -w --plugin-search-dir=. .",
+		"test": "jest --runInBand",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"typescript": "^5.3.3"
+	}
+}
