@@ -4,6 +4,4 @@ export type MakeTuple<
 	Tuple extends T[] = [],
 > = Tuple["length"] extends Length ? Tuple : MakeTuple<T, Length, [...Tuple, T]>;
 
-export type BoxToys<T, N extends number> = {
-	[K in N]: MakeTuple<T, K>;
-}[N];
+export type BoxToys<T, N extends number> = N extends N ? MakeTuple<T, N> : never;

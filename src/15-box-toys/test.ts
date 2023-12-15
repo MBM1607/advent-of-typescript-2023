@@ -2,7 +2,6 @@ import type { Equal, Expect } from "type-testing";
 import type { BoxToys as Original } from "./original.js";
 import type { BoxToys as Preferred } from "./preferred.js";
 
-
 type test_doll_original = Original<"doll", 1>;
 //   ^?
 type test_doll_preferred = Preferred<"doll", 1>;
