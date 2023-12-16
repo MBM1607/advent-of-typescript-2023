@@ -9,3 +9,6 @@ And the type will return a tuple containing that toy that number of times.
 
 But there's one little thing.. We need to support the number of boxes being a union. That means our
 resulting tuple can also be a union. Check out test_nutcracker in the tests to see how that works.
+
+prompt by [Dimitri Mitropoulos](https://github.com/dimitropoulos) of
+[MiTS](https://www.youtube.com/@MichiganTypeScript)
