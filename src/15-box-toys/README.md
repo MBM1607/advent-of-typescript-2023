@@ -9,7 +9,3 @@ And the type will return a tuple containing that toy that number of times.
 
 But there's one little thing.. We need to support the number of boxes being a union. That means our
 resulting tuple can also be a union. Check out test_nutcracker in the tests to see how that works.
-
-## Pondering
-
-The original is my preferred solution for this so they are the same for this.
