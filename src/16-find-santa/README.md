@@ -18,7 +18,3 @@ retrieve him.
 
 prompt by [Dimitri Mitropoulos](https://github.com/dimitropoulos) of
 [MiTS](https://www.youtube.com/@MichiganTypeScript)
-
-## Pondering
-
-The original is my preferred solution for this so they are the same for this.
