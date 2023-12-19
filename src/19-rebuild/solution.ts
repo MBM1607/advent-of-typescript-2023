@@ -14,6 +14,4 @@ export type Rebuild<
 			[...ToyList, ...Repeat<Things[LoopIndex["length"]], F>],
 			LoopIndex["length"] extends 3 ? [] : [...LoopIndex, 1]
 		>
-	: List extends [infer F extends number]
-		? [...ToyList, ...Repeat<Things[LoopIndex["length"]], F>]
-		: ToyList;
+	: ToyList;
