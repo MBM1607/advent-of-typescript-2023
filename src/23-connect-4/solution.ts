@@ -85,15 +85,14 @@ type MakeMoveInRow<R extends Row, Column extends number, State extends Chips> = 
 						: [R[0], R[1], R[2], R[3], R[4], R[5], State];
 
 type MakeMove<
-	B extends Board,
+	Board extends Row[],
 	State extends Chips,
 	Column extends number,
-	PendingBoard extends Row[] = B,
 	TraversedBoard extends Row[] = [],
-> = PendingBoard extends [...infer Rest extends Row[], infer LastRow extends Row]
+> = Board extends [...infer Rest extends Row[], infer LastRow extends Row]
 	? LastRow[Column] extends EmptyCell
 		? [...Rest, MakeMoveInRow<LastRow, Column, State>, ...TraversedBoard]
-		: MakeMove<B, State, Column, Rest, [LastRow, ...TraversedBoard]>
+		: MakeMove<Rest, State, Column, [LastRow, ...TraversedBoard]>
 	: never;
 
 export type Connect4<GameState extends InputState, Column extends number> = IsDraw<
