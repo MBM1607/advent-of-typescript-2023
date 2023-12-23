@@ -111,5 +111,5 @@ export type Connect4<GameState extends InputState, Column extends number> = IsDr
 								? "🟡"
 								: "🔴";
 				}
-			: 1
-		: 2;
+			: never
+		: never;
