@@ -1,5 +1,13 @@
 {
-	"words": ["Blitzen", "Dimitri", "elfs", "Mitropoulos", "oughta"],
+	"words": [
+		"Allis",
+		"Blitzen",
+		"Dimitri",
+		"elfs",
+		"Gravitrips",
+		"Mitropoulos",
+		"oughta"
+	],
 	"ignorePaths": [
 		"package-lock.json",
 		"pnpm-lock.yaml",
