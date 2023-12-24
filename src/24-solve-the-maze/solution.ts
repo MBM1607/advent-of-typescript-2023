@@ -1,6 +1,6 @@
 type Alley = "  ";
 type MazeItem = "🎄" | "🎅" | Alley;
-type DELICIOUS_COOKIES = "🍪";
+type Cookie = "🍪";
 type MazeMatrix = MazeItem[][];
 type Directions = "up" | "down" | "left" | "right";
 
@@ -16,7 +16,7 @@ type Cookified<M extends MazeMatrix> = M extends [
 	infer Row extends MazeItem[],
 	...infer Rest extends MazeMatrix,
 ]
-	? [TupleOfLength<Row["length"], DELICIOUS_COOKIES>, ...Cookified<Rest>]
+	? [TupleOfLength<Row["length"], Cookie>, ...Cookified<Rest>]
 	: [];
 
 type FindSanta<
