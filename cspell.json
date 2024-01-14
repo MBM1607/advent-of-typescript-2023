@@ -6,7 +6,8 @@
 		"elfs",
 		"Gravitrips",
 		"Mitropoulos",
-		"oughta"
+		"oughta",
+		"Santas"
 	],
 	"ignorePaths": [
 		"package-lock.json",
